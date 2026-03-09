@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FloodGuard Alert - Flood Detection Device</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #007bff;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 0.5rem;
+        }
+        h3 {
+            color: #555;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 2rem;
+        }
+        nav {
+            background-color: #0056b3;
+            padding: 0.5rem 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+        nav li {
+            display: inline;
+            margin: 0 1rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 1rem 0;
+        }
+        .team-member {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        .team-member img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            margin-right: 1rem;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>FloodGuard Alert</h1>
+        <p>Preventing Flood-Related Deaths with Early Warning Technology</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#project-description">Project Description</a></li>
+            <li><a href="#functional-requirements">Functional Requirements</a></li>
+            <li><a href="#technical-requirements">Technical Requirements</a></li>
+            <li><a href="#sketches-prototype">Sketches / Prototype</a></li>
+            <li><a href="#about-authors">About the Authors</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <section id="project-description">
+            <h2>1. Project Description</h2>
+            
+            <h3>What is the product</h3>
+            <p>Our product is FloodGuard Alert, an Arduino-based flood detection device. It uses water level sensors to detect when the water in rivers, streets, or bridges rises to a dangerous level. When the system detects possible flooding, it warns people using sound and light signals.</p>
+            
+            <h3>What problem it solves</h3>
+            <p>Flooding is one of the most dangerous natural disasters in the world. Many people lose their lives because floods happen suddenly and people do not receive warnings in time. Our device helps solve this problem by detecting floods early and warning people before the situation becomes dangerous.</p>
+            
+            <h3>Why this problem is important</h3>
+            <p>According to global statistics, floods affect millions of people every year and cause thousands of deaths. Many communities, especially in developing regions, do not have access to advanced flood monitoring systems. Creating a simple and affordable warning device can help protect many lives.</p>
+            
+            <h3>What makes the idea unique</h3>
+            <p>Our idea is unique because:</p>
+            <ul>
+                <li>It uses Arduino technology, which makes the device affordable.</li>
+                <li>It can be installed in many locations such as rivers, bridges, streets, and houses.</li>
+                <li>It provides early warning using light and sound signals.</li>
+                <li>It is designed to be simple, accessible, and practical for communities.</li>
+            </ul>
+        </section>
+        
+        <section id="functional-requirements">
+            <h2>2. Functional Requirements</h2>
+            <p>The product will be able to:</p>
+            <ul>
+                <li>Measure water levels using sensors</li>
+                <li>Detect when the water level becomes dangerous</li>
+                <li>Process data using an Arduino microcontroller</li>
+                <li>Activate warning signals (light and sound alarm)</li>
+                <li>Work continuously to monitor water levels</li>
+                <li>Be installed in flood-prone locations such as rivers or bridges</li>
+                <li>Provide early warning before flooding occurs</li>
+            </ul>
+        </section>
+        
+        <section id="technical-requirements">
+            <h2>3. Technical Requirements</h2>
+            
+            <h3>Programming</h3>
+            <p>Arduino programming language (C++)</p>
+            
+            <h3>Technologies used:</h3>
+            <ul>
+                <li>Arduino microcontroller</li>
+                <li>Water level sensor</li>
+                <li>Buzzer (sound alarm)</li>
+                <li>LED lights (visual warning)</li>
+                <li>Wires and breadboard</li>
+                <li>Power supply</li>
+            </ul>
+            
+            <h3>Website technologies:</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+            </ul>
+        </section>
+        
+        <section id="sketches-prototype">
+            <h2>4. Sketches / Prototype Design</h2>
+            <p>The prototype includes:</p>
+            <ul>
+                <li>Arduino board connected to water level sensors</li>
+                <li>Buzzer for sound alarm</li>
+                <li>LED light for visual warning</li>
+                <li>Wires connecting the components</li>
+            </ul>
+            <img src="Sketch.jpeg" alt="Prototype Sketch">
+        </section>
+        
+        <section id="about-authors">
+            <h2>5. About the Authors</h2>
+            
+            <h3>Team Members</h3>
+            <div class="team-members">
+                <div class="team-member">
+                    <img src="Zhanali.jpeg" alt="Zhanali - Project Leader">
+                    <div>
+                        <strong>Zhanali</strong> – Project Leader / Developer<br>
+                        Responsible for programming the Arduino device and developing the project website. Interested in technology, engineering, and innovation.
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="Narkulan.jpeg" alt="Narkulan Badelbek - Designer">
+                    <div>
+                        <strong>Narkulan Badelbek</strong> – Designer, Researcher<br>
+                        Responsible for creating the website design, layout, and visual elements and researching flood statistics and analyzing existing warning systems.
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="Alinur.jpeg" alt="Alinur - Sponsor">
+                    <div>
+                        <strong>Alinur</strong> – Sponsor<br>
+                        Supports the development of the FloodGuard Alert project.
+                    </div>
+                </div>
+            </div>
+            
+            <h3>Motivation</h3>
+            <p>Our team wants to create technology that can help save lives and protect communities from natural disasters. FloodGuard Alert was designed to provide a simple and affordable flood warning solution.</p>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2026 FloodGuard Alert. All rights reserved.</p>
+    </footer>
+</body>
+</html>
