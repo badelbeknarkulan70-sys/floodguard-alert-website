@@ -78,6 +78,54 @@
             margin-right: 1rem;
             border-radius: 50%;
         }
+        .timeline {
+            display: grid;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        .timeline-week {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 1rem;
+            background-color: #fafafa;
+        }
+        .timeline-week.completed {
+            border-left: 6px solid #28a745;
+        }
+        .timeline-week.in-progress {
+            border-left: 6px solid #ffc107;
+        }
+        .timeline-week.not-completed {
+            border-left: 6px solid #dc3545;
+        }
+        .timeline-week h3 {
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+        }
+        .timeline-week .status {
+            display: inline-block;
+            margin-top: 0.5rem;
+            padding: 0.25rem 0.7rem;
+            border-radius: 999px;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+        .timeline-week.completed .status {
+            background-color: #d4edda;
+            color: #155724;
+        }
+        .timeline-week.in-progress .status {
+            background-color: #fff3cd;
+            color: #856404;
+        }
+        .timeline-week.not-completed .status {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+        .timeline-week ul {
+            margin-top: 0.5rem;
+            margin-left: 1.25rem;
+        }
     </style>
 </head>
 <body>
@@ -166,8 +214,68 @@
             <img src="Sketch.jpeg" alt="Prototype Sketch">
         </section>
         
+        <section id="sponsor-interview">
+            <h2>5. Sponsor Interview</h2>
+            <p><strong>We:</strong> Hello! We are very glad to see you and thanks for investing in us.</p>
+            <p><strong>Sponsor:</strong> Hello! Thank you so much for the warm welcome — it’s a pleasure to be here. I’m glad to support your team and invest in your project.</p>
+            <p><strong>We:</strong> About our project, our project is an Arduino device that prevents deaths from flooding, as flooding has become one of the most dangerous natural disasters. So, its function - it will detect water level, if its level is suitable for flooding, then it will notice people with light and sound.</p>
+            <p><strong>Sponsor:</strong> I’m very interested so far. Why did you choose an Arduino-based solution, and in what places do you plan to install this device (for example, rivers, streets, houses, or bridges)?</p>
+            <p><strong>We:</strong> Well, we are going to install it in bridges, beaches, rivers or in streets and houses if needed.</p>
+            <p><strong>Sponsor:</strong> Oh, good! How is your device different from existing flood warning systems, and why do you think people or governments would choose your solution?</p>
+            <p><strong>We:</strong> Our device is better for 3 reasons, first of all it can install everywhere, secondly it's cheaper which means it is accessible to all people, and finally it detects flooding faster than other existing flood warning systems.</p>
+            <p><strong>Sponsor:</strong> Sounds good! That's enough I am confident that this project has strong potential and real social value. Flooding is a serious and growing problem, and your Arduino-based device offers a practical, affordable, and fast solution to reduce risks and save lives. For these reasons, I am proud to support and invest in your project.</p>
+            <p><strong>We:</strong> Thank you very much, goodbye!</p>
+            <p><strong>Sponsor:</strong> Goodbye!</p>
+        </section>
+        
+        <section id="timeline">
+            <h2>6. Timeline (Process of Our Work)</h2>
+            <div class="timeline">
+                <div class="timeline-week completed">
+                    <h3>Week 1 — Plan + Parts</h3>
+                    <ul>
+                        <li>Decide what your system will do</li>
+                        <li>Choose components (Arduino, sensor, buzzer, LED)</li>
+                    </ul>
+                    <span class="status">Completed</span>
+                </div>
+                <div class="timeline-week completed">
+                    <h3>Week 2 — Build Basic System</h3>
+                    <ul>
+                        <li>Connect sensor to Arduino</li>
+                        <li>Write code to read water level</li>
+                        <li>Test with water</li>
+                    </ul>
+                    <span class="status">Completed</span>
+                </div>
+                <div class="timeline-week in-progress">
+                    <h3>Week 3 — Add Alerts</h3>
+                    <ul>
+                        <li>Add buzzer and LED</li>
+                        <li>Program:
+                            <ul>
+                                <li>Safe level</li>
+                                <li>Warning level</li>
+                                <li>Danger level 🚨</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <span class="status">In progress</span>
+                </div>
+                <div class="timeline-week not-completed">
+                    <h3>Week 4 — Improve + Finish</h3>
+                    <ul>
+                        <li>Fix errors</li>
+                        <li>Make it look clean (box, wires)</li>
+                        <li>Test in real life condition</li>
+                    </ul>
+                    <span class="status">Not completed</span>
+                </div>
+            </div>
+        </section>
+        
         <section id="about-authors">
-            <h2>5. About the Authors</h2>
+            <h2>7. About the Authors</h2>
             
             <h3>Team Members</h3>
             <div class="team-members">
