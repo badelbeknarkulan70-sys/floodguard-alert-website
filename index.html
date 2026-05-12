@@ -139,6 +139,7 @@
             <li><a href="#functional-requirements">Functional Requirements</a></li>
             <li><a href="#technical-requirements">Technical Requirements</a></li>
             <li><a href="#sketches-prototype">Sketches / Prototype</a></li>
+            <li><a href="#development-process">Development Process</a></li>
             <li><a href="#about-authors">About the Authors</a></li>
         </ul>
     </nav>
@@ -273,6 +274,73 @@
                 </div>
             </div>
         </section>
+        
+        <section id="development-process">
+    <h2>Development Process (Alpha → Beta → Final)</h2>
+    <p>This section shows how our product improved based on feedback and testing.</p>
+
+    <div class="timeline">
+        <div class="timeline-week completed">
+            <h3>Alpha Version (Schematic & Proof of Concept)</h3>
+            <p><strong>Status:</strong> Initial Prototype</p>
+            <ul>
+                <li>Basic schematic showing how the water sensor works with Arduino.</li>
+                <li>Visual alerts using only LEDs.</li>
+                <li><em>Issues:</em> Some bugs in the code logic (function errors).</li>
+            </ul>
+            <img src="Sketch.jpeg" alt="Alpha version schematic" style="max-width: 300px;">
+        </div>
+
+        <div class="timeline-week completed">
+            <h3>Beta Version (Functional Improvements)</h3>
+            <p><strong>Status:</strong> Advanced Prototype</p>
+            <ul>
+                <li>Fixed bugs in the main function code.</li>
+                <li>Added a <strong>Piezo Buzzer</strong> for sound alerts (crucial for sleeping people).</li>
+                <li>Improved wiring stability on the breadboard.</li>
+            </ul>
+            <img src="beta.png" alt="Beta version with buzzer" style="max-width: 300px;">
+        </div>
+
+        <div class="timeline-week completed">
+            <h3>Final Version (Design & Real-Life Test)</h3>
+            <p><strong>Status:</strong> Ready for Deployment</p>
+            <ul>
+                <li>Created a protective <strong>external box</strong> for the device.</li>
+                <li>Organized cables for a professional look.</li>
+                <li><strong>Field Test:</strong> Tested in real-life conditions to ensure durability and sensor accuracy.</li>
+            </ul>
+            <img src="final_product.jpg" alt="Final product in box" style="max-width: 300px;">
+        </div>
+    </div>
+
+    <hr>
+
+    <h3>Feedback & Evidence</h3>
+    <div class="timeline-week">
+        <h4>Alpha Stage Feedback</h4>
+        <p><strong>Sponsor Interview Highlights:</strong> The sponsor liked the idea but asked how we plan to alert people in different locations. We realized light (LEDs) wasn't enough for loud environments.</p>
+        
+        <h4>Beta Stage Feedback (User Testing)</h4>
+        <ul>
+            <li><strong>User 1:</strong> "I might not see the light if I'm not looking at the device." -> <em>Response: Added Piezo element.</em></li>
+            <li><strong>User 2:</strong> "The wires look fragile for outdoor use." -> <em>Response: Designed a protective box for the Final version.</em></li>
+        </ul>
+    </div>
+
+    <h3>Evidence of Development</h3>
+    <ul>
+        <li><strong>Tools used:</strong> Arduino IDE, Tinkercad (for schematics), Soldering iron, Multimeter.</li>
+        <li><strong>Before vs After:</strong> The transition from a messy breadboard (Alpha) to a compact, encased device (Final).</li>
+    </ul>
+
+    <div class="timeline-week" style="background-color: #e9f5ff;">
+        <h3>Final Reflection</h3>
+        <p><strong>What improved most?</strong> The reliability of the system and the addition of sound alerts made it a real safety tool rather than just a toy.</p>
+        <p><strong>Most useful feedback:</strong> The suggestion to protect the electronics, which led us to build the waterproof box.</p>
+        <p><strong>Future Improvements:</strong> In the future, we would add a GSM module to send SMS alerts to phones.</p>
+    </div>
+</section>
         
         <section id="about-authors">
             <h2>7. About the Authors</h2>
